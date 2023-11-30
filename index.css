@@ -1,0 +1,53 @@
+html, body {
+    background-color: #c88f7a;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wholepage {
+ /*same for all 3 row classes */
+float: left;
+width: 100%;
+padding: 10px;   
+}
+
+.row1 {
+height: 5vh;
+background-color: #ccc;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+
+#p1 {
+color: black;
+
+}
+
+.row2 {
+height: 35vh;
+width: 100%;
+background-color: #c88f7a;
+box-sizing: border-box;
+margin: 1px;
+
+display: grid;
+grid-template-columns: repeat(5, 20%);
+gap: auto;
+
+}
+
+#r2c1 {}
+
+.row3 {
+height: 60vh;
+width: 100%;
+background-color: #c88f7a;
+border: 5px solid black;
+box-sizing: border-box;
+margin: 1px;
+}
