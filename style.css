@@ -1,0 +1,86 @@
+
+html, body {
+    background-color: #c88f7a;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wholepage {
+    /*same for all 3 row classes */
+    float: left;
+    width: 100%;
+    padding: 10px;   
+}
+
+.row1 {
+    height: 5vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#p1 {
+    color: black;
+}
+
+.row2 {
+    height: 35vh;
+    width: 100%;
+    background-color: #c88f7a;
+    box-sizing: border-box;
+    margin: 1px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border: 1px solid black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 60vh;
+    width: 100%;
+    background-color: #c88f7a;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin: 1px;
+}
+
+.paymentinfo {
+    display: grid;
+    grid-template-rows: 2fr, repeat(7, 1fr), 2fr;
+}
+
+.receipt {
+}
