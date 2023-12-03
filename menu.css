@@ -1,0 +1,142 @@
+html, body {
+    background-color: #c88f7a;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wholepage {
+ /*same for all 3 row classes */
+width: 100%;
+padding: 10px;   
+}
+
+.row1 {
+height: 5vh;
+background-color: #ccc;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+
+#p1 {
+color: black;
+
+}
+
+.row2 {
+    height: auto;
+    width: 100%;
+    background-color: #c88f7a;
+    box-sizing: border-box;
+    margin: 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: auto;
+}
+
+.menu-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkout_button {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.menu-item {
+    width:50%;
+    height:auto;
+    text-align: center;
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item img {
+    height: 100%; 
+    width: 100%; 
+    border-radius: 10px; 
+}
+
+.order-button {
+    padding: 8px 10px; 
+    width: 100px;
+    background-color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 0 auto;
+    
+}
+h1, h2 {
+    text-decoration: underline;
+}
+
+
+#r2c1 {}
+
+
+
+.topnav{
+    padding-top: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 100;
+    width: auto;
+}
+
+.topnav img{
+    flex: 1;
+    float: left;
+    background: transparent;
+    padding-left: 1%;
+    max-width: 100%;
+    height: auto;
+}
+
+.topnav a{
+    flex: 2;
+    background-color: white;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 100;
+    width: auto;
+}
+
+.topnav button{
+    flex: 2;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+.topnav a:hover{
+    background-color: black;
+    color: white;
+}
+
+.topnav input[type=text]{
+    flex: 3;
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+

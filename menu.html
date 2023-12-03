@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="menu.css">
+        <title>Early Riser Coffee</title>
+    </head>
+
+    <body>
+        <div class="topnav" id="topnav">
+            <img src="assets/logo.png" alt="Coffee Cup Logo" height="5%" width="5%">
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="#login">Login</a>
+            <input type="text" placeholder="Search">
+            <p id="welcome_name"></p>
+        </div>
+        <hr>
+        <div class="wholepage">
+            <div class="row1">
+                <p id="p1" name="p1">Early Riser Coffee</p>
+            </div>
+
+            <div class="row2">
+                <h1>Menu</h1>
+                <br>
+                <br>
+                <div class="menu-category">
+                    <h2>Drinks</h2>
+                    <div class="menu-item">
+                        <img src="assets/coffee.jpeg" alt="Coffee" height="50%" width="30%">
+                        <p class="item-description">Coffee</p>
+                        <button class="order-button" id="add_Coffee" value="add_Coffee">Add to cart</button>
+                    </div>
+            
+                    <div class="menu-item">
+                        <img src="assets/cold brew.jpg" alt="Cold Brew" height="50%" width="30%">
+                        <p class="item-description">Cold Brew</p>
+                        <button class="order-button" id="add_Brew" value="add_Brew">Add to cart</button>
+                    </div>
+            
+                    <div class="menu-item">
+                        <img src="assets/nitro.jpg" alt="Nitro Coffee" height="50%" width="30%">
+                        <p class="item-description">Nitro Coffee</p>
+                        <button class="order-button" id="add_Nitro" value="add_Nitro">Add to cart</button>
+                    </div>
+                </div>
+            
+                <div class="menu-category">
+                    <h2>Food</h2>
+                    <div class="menu-item">
+                        <img src="assets/bagel.jpeg" alt="Bagel" height="50%" width="30%">
+                        <p class="item-description">Bagel</p>
+                        <button class="order-button" id="add_Bagel" value="add_Bagel">Add to cart</button>
+                    </div>
+            
+                    <div class="menu-item">
+                        <img src="assets/muffin.jpeg" alt="Muffin" height="50%" width="30%">
+                        <p class="item-description">Muffin</p>
+                        <button class="order-button" id="add_Muffin" value="add_Muffin">Add to cart</button>
+                    </div>
+                </div>
+
+                <button class="checkout_button" id="checkout" value="checkout">Checkout</button>
+            </div>
+
+        </div>
+        <script src="menu.js" async defer></script>
+    </body>
+</html>
