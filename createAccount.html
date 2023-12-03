@@ -1,0 +1,69 @@
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Create Account</title>
+         <link rel="stylesheet" type="text/css" href="createAccount.css"> 
+    
+     </head>
+     <body>
+         <div id="createAccountForm">
+             <div id="logo">
+                <img src="assets/logo.png" alt="coffee-beans" width="60" height="60">
+             </div>
+     
+             <div id="formContainer" >
+                 <h2>Create Account</h2>
+                 <form id="accountForm">
+                    <label for="fname" >First name:</label> 
+                    <input type="text" id="fname" name="firstName" required> 
+                    <div id="fnameError" class="error">
+                        <p style="font-size: 12px"> </p>
+                    </div>
+        
+                    <label for="lname" >Last name:</label> 
+                    <input type="text" id="lname" name="lastname" required>
+                    <div id="lnameError" class="error">
+                        <p style="font-size: 12px"> </p>
+                    </div>
+                    
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <div id="usernameError" class="error">
+                        <p style="font-size: 12px"> </p>
+                    </div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <div id="emailError" class="error">
+                        <p style="font-size: 12px"> </p>
+                    </div>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" 
+                        onfocus="displayPasswordValidation()" onblur="removePasswordValidation()" required>
+                    <div id="passwordError" class="error">
+                        <p style="font-size: 12px"> </p>
+                    </div>
+                     
+                    <button type="button" onclick="createAccount()">Create Account</button>
+
+                    <div id="passwordValidation">
+                        <p>- From 6 to 20 characters</p>
+                        <p>- At least one number</p>
+                        <p>- At least one capital letter</p>
+                        <p>- At least one lowercase letter</p> 
+                    </div>
+                 </form>
+             </div>
+             
+         </div>
+     
+         <script  type="text/javascript" src="createAccount.js"></script>
+     </body>
+     </html>
+     
+     
+     
