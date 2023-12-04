@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css"> 
+</head>
+<body>
+
+<div id="login-container">
+  <div id="logo-container">
+    <img src="assets/logo.png" alt="coffee-beans"  width="150" height="150" >
+  </div>
+  <form id="login-form">
+    <div id="login-text">
+      <h2>Login</h2>
+    </div>   
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="login()">Login</button>
+
+    <div id="join-container">
+      <p style="font-size: 12px"> Don't have an account? 
+        <a target="_blank" href="createAccount.html"> Join now</a> 
+      </p>
+    </div>
+  </form>
+</div>
+
+<script  type="text/javascript" src="login.js"></script>
+
+</body>
+</html>
